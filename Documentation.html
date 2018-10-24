@@ -48,9 +48,21 @@ section#links a:not(:last-child) {
 sup code {
   font-size: smaller;
 }
+p.note
+{
+     color: #616E14;
+     border: solid 1px #BFD62F;
+     background-color: #DAE691;
+     -moz-border-radius: 6px;
+     -webkit-border-radius: 6px;
+     border-radius: 6px;
+     padding: 14px 20px;
+     mc-auto-number-format: '{b}Note: {/b}';
+}
 </style></head><body>
 
 <h1>NumberProto.js Documentation</h1>
+<p class="note"> Note: The documentation is being depracated in favor of the <a href="https://github.com/VFDan/NumberProto.js/wiki">wiki</a>. Once the transformation is complete, this page will be deleted.</p>
 <p>NumberProto.js is a JavaScript plugin to help with numbers. It uses<code class=" language-js">Number<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>bar<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code>, so you can call <code class=" language-js">x <span class="token operator">=</span> x<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code> instead of <code class=" language-js">x <span class="token operator">=</span> <span class="token function">foo</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>, making lexical sense. If you use number literals, they must be in parenthesis, like this:<code class=" language-js"><span class="token punctuation">(</span><span class="token number">1.23</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span></code>. This, however doesn't work with strings or booleans, so you must use<code class=" language-js"><span class="token punctuation">(</span><span class="token operator">+</span><span class="token string">"1"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span></code>. It's also compatible with every major browser, including IE. For support, polyfills have been added. All functions return a value with type <code class=" language-js">Number</code>, unless explicitly said.</p>
 <section id="links">
   <h3>Functions</h3><a href="#round"><code class=" language-js">Number<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>decimals<span class="token punctuation">)</span></code></a><a href="#typeOf"><code class=" language-js">Number<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">typeOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></a><a href="#isSafe"><code class=" language-js">Number<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">isSafe</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></a><a href="#mod"><code class=" language-js">Number<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">mod</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span></code></a><a href="#isDivisibleBy"><code class="lang-js">Number.prototype.isDivisibleBy(y)</code></a>
