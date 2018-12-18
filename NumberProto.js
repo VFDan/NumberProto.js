@@ -18,7 +18,7 @@ Number.prototype.isDivisibleBy = function(y) {
   return (this.mod(y) === 0);
 }
 Number.prototype.length = function() {
-  return isNaN(this) ? NaN : this.toString().replace('.', '').length;
+  return isNaN(this) ? NaN : (this == Infinity) ? Infinity : this.toString().replace('.', '').length;
 }
 Number.prototype.factorial = function() {
   return (this.typeOf() !== "Integer" || this <= 0) ? 1 : this * (this - 1).factorial();
