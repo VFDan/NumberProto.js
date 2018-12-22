@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+h1 {
+  font-family: "Megrim", monospace;
+  text-align: center;
+}
+form {
+  background-color: orange;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  background-color: cyan;
+  padding: 5px;
+  margin: 5px;
+}
