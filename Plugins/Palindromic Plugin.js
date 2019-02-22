@@ -1,6 +1,6 @@
-Number.prototype.reverse = function() {
+Number.prototype.reverseAdd = function() {
   return Number(this.toString().split('').reverse().join(''));
 }
 Number.prototype.isPalindromic = function() {
-  return Number(this) === this.reverse();
+  return Number(this) === this.reverseAdd();
 }
