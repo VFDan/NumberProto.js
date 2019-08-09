@@ -10,7 +10,8 @@ body {
 }
 
 header {
-  background-color: #00503a;
+  background-color: #00503a; /* For browsers that don't support gradients */
+  background-image: linear-gradient(#00503a, #15836D);
   padding-top: 1px;
   padding-bottom: 30px;
   text-align: center;
