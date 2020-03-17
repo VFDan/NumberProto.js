@@ -26,8 +26,7 @@ header h2 {
   font-size: 1.6rem;
 }
 
-#fork {
-  position: absolute;
-  right: 0;
-  top: 0;
+header h2 a {
+  color: #2bf!important;
+  font-weight: bolder;
 }
