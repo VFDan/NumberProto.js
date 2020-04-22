@@ -23,5 +23,11 @@ Number.prototype.length = function() {
 Number.prototype.factorial = function() {
   return (this.typeOf() !== "Integer" || this <= 0) ? 1 : this * (this - 1).factorial();
 }
+Number.prototype.discount = function(percent) {
+  return (this - this * (percent / 100)).round(2);
+};
+Number.prototype.tax = function(percent) {
+  return (this + this * (percent/100)).round(2);
+}
 //Polyfills\\
 Number.MAX_SAFE_INTEGER = Math.pow(2, 53) -   1;
