@@ -29,5 +29,11 @@ Number.prototype.discount = function(percent) {
 Number.prototype.tax = function(percent) {
   return (this + this * (percent/100)).round(2);
 }
+Number.prototype.reverse = function() {
+  return Number(this.toString().split('').reverse().join(''));
+}
+Number.prototype.isPalindromic = function() {
+  return Number(this) === this.reverse();
+}
 //Polyfills\\
-Number.MAX_SAFE_INTEGER = Math.pow(2, 53) -   1;
+Number.MAX_SAFE_INTEGER = Math.pow(2, 53) -  1;
