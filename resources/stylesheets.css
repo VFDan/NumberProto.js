@@ -1,5 +1,10 @@
+html {
+  min-height: 100%
+}
+
 body {
   margin: 0;
+  height: 100%;
   background: rgb(115,174,245);
   background: linear-gradient(180deg, rgba(115,174,245,1) 10%, rgba(97,164,241,1) 40%, rgba(71,141,224,1) 70%, rgba(57,138,229,1) 90%);
   color: #e0e0e0;
