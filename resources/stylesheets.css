@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-color: #15836D;
+  background: rgb(115,174,245);
+  background: linear-gradient(180deg, rgba(115,174,245,1) 10%, rgba(97,164,241,1) 40%, rgba(71,141,224,1) 70%, rgba(57,138,229,1) 90%);
   color: #e0e0e0;
   font-family: arial, sans-serif;
 }
@@ -10,8 +11,6 @@ body {
 }
 
 header {
-  background-color: #00503a; /* For browsers that don't support gradients */
-  background-image: linear-gradient(#00503a, #15836D);
   padding-top: 1px;
   padding-bottom: 30px;
   text-align: center;
